@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Partitioning commands for /dev/sda
+echo -e "n\np\n1\n\n+512M\nt\nef\nw" | sudo fdisk /dev/sda
+echo -e "n\np\n2\n\n\nw" | sudo fdisk /dev/sda
